@@ -83,4 +83,19 @@ public class PencatatanPrestasi {
 
         System.out.println("Data prestasi berhasil ditambahkan.");
     }
+    public static void tampilkanSemuaPrestasi() {
+        System.out.println("\n=== Daftar Semua Prestasi ===");
+        if (jumlahData == 0) {
+            System.out.println("Belum ada data prestasi.");
+        } else {
+            for (int i = 0; i < jumlahData; i++) {
+                System.out.println((i + 1) + ". Nama: " + dataPrestasi[i][0] +
+                        ", NIM: " + dataPrestasi[i][1] +
+                        ", Jenis: " + dataPrestasi[i][2] +
+                        ", Tingkat: " + dataPrestasi[i][3] +
+                        ", Tahun: " + dataPrestasi[i][4]);
+            }
+        }
+    }
+
 }
